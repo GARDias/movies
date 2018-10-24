@@ -1,14 +1,10 @@
-<div class="row">
-
-  <div class="col-md-3" *ngFor="let filme of listFilmes">
+<div class="col-md-3">
     <div class="card">
       <img class="card-img-top" src="{{filme.Poster}}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{filme.Title}}</h5>
         <p class="card-text"><small class="text-muted">{{filme.Released}}, {{filme.Genre}}</small></p>
-        <a href="javascript:void(0);" class="card-link" routerLink="/detalhes/{{filme.imdbID}}">Details</a>
+        <a href="javascript:void(0);" class="card-link" routerLink="/Home">Voltar</a>
       </div>
     </div>
   </div>
-
-</div>

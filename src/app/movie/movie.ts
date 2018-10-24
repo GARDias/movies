@@ -1,8 +1,9 @@
 export class Movie{
-    imdbID : String;
-    Title : String;
-    Released : String;
-    Plot : String;
-    Language : String;
-    Poster : String;
+    imdbID : string;
+    Title : string;
+    Released : string;
+    Plot : string;
+    Language : string;
+    Poster : string;
+    Genre : string;
 }

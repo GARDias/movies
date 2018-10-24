@@ -7,9 +7,9 @@ import { Movie } from './movie/movie';
 })
 export class MovieService {
   URL_API = 'http://localhost:8080/filme/';
-    constructor(public http: HttpClient){}
+    constructor(private http: HttpClient){}
    buscarFilme(nome : String):Observable<Movie>{
-        let requisicao = 'previsao?title=';
+        let requisicao = 'titulo?title=';
         return this.http.get<Movie>(this.URL_API + requisicao + nome);
    }
 
