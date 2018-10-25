@@ -1,0 +1,16 @@
+<div class="row">
+
+  <div class="col-md-3" *ngFor="let filme of list.search">
+    <div class="card">
+      <img class="card-img-top" src="{{filme.Poster}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{filme.Title}}</h5>
+        <p class="card-text"><small class="text-muted">{{filme.Released}}, {{filme.Genre}}</small></p>
+        <a href="javascript:void(0);" class="card-link" routerLink="/detalhes/{{filme.imdbID}}">Details</a>
+      </div>
+    </div>
+  </div>
+  <div>
+    Adicionar mais filmes:  <a href="javascript:void(0);" routerLink="/api/{{titulo}}" class="card-link" >Clique Aqui</a>
+  </div>
+</div>

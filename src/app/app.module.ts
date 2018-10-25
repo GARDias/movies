@@ -8,12 +8,18 @@ import { MovieService } from './movie.service';
 import { FormsModule } from '@angular/forms';
 
 import { DetalhesComponent } from './detalhes/detalhes.component';
+import { PesquisarComponent } from './pesquisar/pesquisar.component';
+import { APIComponent } from './api/api.component';
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
    
-    DetalhesComponent
+    DetalhesComponent,
+   
+    PesquisarComponent,
+   
+    APIComponent
   ],
   imports: [
     BrowserModule,

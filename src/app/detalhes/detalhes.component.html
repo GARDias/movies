@@ -1,10 +1,27 @@
 <div class="col-md-3">
     <div class="card">
-      <img class="card-img-top" src="{{filme.Poster}}" alt="Card image cap">
+      <img class="card-img-left" src="{{filme.Poster}}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{filme.Title}}</h5>
-        <p class="card-text"><small class="text-muted">{{filme.Released}}, {{filme.Genre}}</small></p>
+        <div>
+          Sinopse:
+            <p class="card-text"><small class="text-muted">{{filme.Plot}}</small></p>
+
+          Genero:
+          <p class="card-text"><small class="text-muted">{{filme.Genre}}</small></p>
+
+          Idiomas:
+          <p class="card-text"><small class="text-muted">{{filme.Language}}</small></p>
+
+          Data de lançamento:
+          <p class="card-text"><small class="text-muted">{{filme.Released}}</small></p>
+        </div>
         <a href="javascript:void(0);" class="card-link" routerLink="/Home">Voltar</a>
       </div>
     </div>
+  </div>
+
+  <div>
+    <input [(ngModel)]="comentario" name="comentario" class="form-control mr-sm-2" type="search" placeholder="Comentario" aria-label="Search" >
+    <button (click)="comentar()">Comentar</button>
   </div>
