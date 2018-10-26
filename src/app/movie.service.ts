@@ -5,6 +5,7 @@ import { Movie } from './movie/movie';
 import { pesquisarnoBanco } from './pesquisar/pesquisa';
 
 import { apilist } from './api/apilist';
+import { comentario } from './detalhes/comentario';
 @Injectable({
   providedIn: 'root'
 })
@@ -40,9 +41,7 @@ export class MovieService {
       return this.http.get<apilist>(this.URL_API + requisicao);
    }
 
-   inserir(imdbID : string){
-      let requisicao = "inserir?id=" + imdbID;
-      console.log(this.URL_API + requisicao);
-      return this.http.post(this.URL_API + requisicao);
+   inserir(com : comentario):Observable<comentario>{
+     let requisicao = 
    }
 }
